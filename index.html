@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-ca">
   <head>
-    <title>Top Youtube Channels List</title>
+    <title>Top Youtube Channels List With Their Ranks</title>
     <meta charset="utf-8">
   </head>
 
   <body>
+    <table style="width:100%;">
+      <h1>Top Youtube Channels</h1>
+      <caption> Data:
+        <i> <a href="https://en.wikipedia.org/wiki/List_of_most-subscribed_YouTube_channels#50_most-subscribed_channels"> Wikipedia</a>
+        </i>
+      </caption>
 
-    <h1>Top Youtube Channels</h1>
-    <p>
-      <i>Data:
-        <a href="https://en.wikipedia.org/wiki/List_of_most-subscribed_YouTube_channels#50_most-subscribed_channels"> Wikipedia</a>
-      </i></p>
-
-    <table>
-      <tr>
+      <tr style="text-align:center;">
         <td><b>Rank</b></td>
         <td><b>Name</b></td>
         <td><b>Brand Channel</b></td>
@@ -22,7 +21,6 @@
         <td><b>Primary Langauge</b></td>
         <td><b>Category</b></td>
         <td><b>Country</b></td>
-
       </tr>
       <tr>
         <td>1</td>
@@ -116,20 +114,34 @@
       </tr>
     </table>
 
- <p>
-    Which of these
+    <p>
+      Which of these YouTube channels have you watched before?
     </p>
-    Data: Wikipedia
-    <!--Webform Question-->
-    Which of these YouTube channels have you watched before?
-    <!--Webform Options-->
-    T-Series
-    MrBeast
-    Cocomelon
-    Sony Entertainment Television India
-    Kids Diana Show
-    PewDiePie
-    Like Nastya
-    Vlad and Niki
-    Zee Music Company
-    WWE
+
+    <form action="/action_page.php">
+      <fieldset>
+        <input type="radio" id="rank1" name="rank1" value="T-Series">
+        <label for="rank1"> T-Series</label><br>
+        <input type="radio" id="rank2" name="rank2" value="MrBeast">
+        <label for="rank2"> MrBeast</label><br>
+        <input type="radio" id="rank3" name="rank3" value="Cocomelon">
+        <label for="rank3"> Cocomelon</label><br>
+        <input type="radio" id="rank4" name="rank4" value="Sony Entertainment Television India">
+        <label for="rank4"> Sony Entertainment Television India</label><br>
+        <input type="radio" id="rank5" name="rank5" value="Kids Diana Show">
+        <label for="rank5"> Kids Diana Show</label><br>
+        <input type="radio" id="rank6" name="rank6" value="PewDiePie">
+        <label for="rank6"> PewDiePie</label><br>
+        <input type="radio" id="rank7" name="rank7" value="Like Nastya">
+        <label for="rank7"> Like Nastya</label><br>
+        <input type="radio" id="rank8" name="rank8" value="Vald and Niki">
+        <label for="rank8"> Vald and Niki</label><br>
+        <input type="radio" id="rank9" name="rank9" value="Zoe">
+        <label for="rank9"> Zee Music Company</label><br>
+        <input type="radio" id="rank10" name="rank10" value="WWE">
+        <label for="rank10"> WWE</label><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </body>
+</html>
